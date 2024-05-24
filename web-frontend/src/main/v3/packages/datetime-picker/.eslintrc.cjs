@@ -14,8 +14,9 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh',"prettier"],
   rules: {
+    "prettier/prettier": ["error", { "endOfLine": "auto"}],
     'react-refresh/only-export-components': [
       'warn',
       {
